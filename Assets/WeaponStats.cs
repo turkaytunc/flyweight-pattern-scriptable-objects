@@ -4,11 +4,12 @@ using UnityEngine;
 
 
 [CreateAssetMenu(fileName ="WeaponStats", menuName = "WeaponStats")]
+[System.Serializable]
 public class WeaponStats : ScriptableObject
 {
-    private string weaponName;
-    private string weaponDescription;
-    private int dropRate;
-    private int rarity;
-
+    public string weaponName;
+    public string description;
+    public int dropRate;
+    public int rarity;
+    public Color32 weaponColor;
 }
