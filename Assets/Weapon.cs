@@ -6,10 +6,11 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] private WeaponStats weaponStats;
 
-    private int damageAmount;
-    private float attackSpeed;
-    private string impueType;
-
+    [SerializeField] private int damageAmount;
+    [SerializeField] private float attackSpeed;
+    [SerializeField] private string impueType;
+    [SerializeField] private string weaponName;
+    [SerializeField] private string description;
 
     private void Awake()
     {
